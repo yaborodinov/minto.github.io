@@ -6,17 +6,74 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #a292b3;
+    width: 1300px;
+    margin: 0 auto;
 }
 
 
 /* header */
 header{
-margin-top: 8px;
-height: 130px;
-}
-.conteiner{
-    
-    width: 1300px;
-    margin: 0 auto;
     background-color: #fff;
+    margin-top: 8px;
+}
+/* conteiner */
+.conteiner{
+    width: 1018px;
+    margin: 0 auto;
+}
+
+/* row */
+.row::after, .logo::after, .row_menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col-md-418{
+    width: 418px;
+}
+.col-md-600{
+     width: 600px;
+}
+[class*="col-"], [class*="logo_"]{
+    float: left;
+}
+
+/* logo */
+.logo{
+    height: 130px;
+   
+}
+.logo_img{
+    display: block;
+    padding: 30px 0;
+
+}
+.logo_title{
+    display: block;
+    line-height: 130px;
+    font-size: 39px;
+    color: #a99ab9;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* menu */
+.col-md-150{
+    width: 150px;
+    height: 130px;
+}
+.row_menu>div>a{
+    text-decoration: none;
+    line-height: 130px;
+    color: #a99ab9;
+    font-size: 19px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.row_menu>div:last-child>a{
+    padding-left: 10px;
+}
+.row_menu>div>a:hover{
+    text-shadow: 0 0 1px #81699D;
+    transition: 0.3s linear;
 }
