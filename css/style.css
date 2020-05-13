@@ -6,14 +6,18 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #a292b3;
+    
+}
+.page{
     width: 1300px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 
 /* header */
 header{
-    background-color: #fff;
+    
     margin-top: 8px;
 }
 /* conteiner */
@@ -76,4 +80,84 @@ header{
 .row_menu>div>a:hover{
     text-shadow: 0 0 1px #81699D;
     transition: 0.3s linear;
+}
+
+
+/* main */
+/* slider */
+.slider{
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.slider_img{
+    width: 100%;
+    
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35px);
+    left: 0;
+    width: 34px;
+    height: 65px;
+    background-image: url(../img/background/left.jpg);
+    cursor: pointer;
+}
+.slider::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35px);
+    right: 0;
+    width: 34px;
+    height: 65px;
+    background-image: url(../img/background/right.jpg);
+    cursor: pointer;
+}
+.slider_titile{
+    position: absolute;
+    display: block;
+    top: 130px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 117px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: -4px 4px rgb(146, 143, 143);
+}
+.slider_text{
+    position: absolute;
+    display: block;
+    top: 258px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 31px;
+    font-family: 'Philosopher', sans-serif;
+    text-shadow: -2px 1px rgb(146, 143, 143);
+}
+
+/* slogan */
+.slogan{
+    font-family: 'Philosopher', sans-serif;
+    font-style: italic;
+    margin: 0 10px;
+    padding: 20px 35px;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    color: #494848;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+.slogan>span{
+    font-weight: 700;
+    color: #82699d;
 }
