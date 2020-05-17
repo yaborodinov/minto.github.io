@@ -27,7 +27,7 @@ header{
 }
 
 /* row */
-.row::after, .logo::after, .row_menu::after, .section::after{
+.row::after, .logo::after, .row_menu::after, .section::after, .row_aside:after{
     content: "";
     display: block;
     clear: both;
@@ -38,7 +38,8 @@ header{
 .col-md-600{
      width: 600px;
 }
-[class*="col-"], [class*="logo_"], .section_pic, .section_text{
+[class*="col-"], [class*="logo_"], .section_pic, .section_text,
+[class*="row_aside_"]{
     float: left;
 }
 
@@ -210,4 +211,46 @@ header{
     height: 9px;
     background-image: url(../img/icon/33.jpg);
     margin-left: 6px;
+}
+
+/* aside */
+.aside{
+    margin-top: 60px;
+}
+.row_aside_title{
+    width: 325px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.row_aside_title>span{
+    font-weight: 700;
+}
+.row_aside_point{
+    color: #E2E2E2;
+    width: 693px;
+    overflow: hidden;
+    line-height: 0.3;
+}
+
+/* companies */
+.companies{
+    margin-top: 40px;
+}
+.companies:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.companies_img{
+    float: left;
+    width: 25%;
+    height: 75px;
+    background-color: #F5F5F5;
+    border: 1px solid #E4E4E4;
+}
+.companies_img>img{
+    display: block;
+    margin: auto;
+    transform: translateY(20px);
+    
 }
