@@ -236,6 +236,10 @@ header{
 .companies{
     margin-top: 40px;
 }
+.companies>a:hover > .companies_img{
+   border: 2px solid #E4E4E4;
+   transition: 0.2s linear;
+}
 .companies:after{
     content: "";
     display: block;
@@ -276,10 +280,10 @@ header{
     width: 718px;
     float: left;
     text-align: right;
-    color: #82699D;
     line-height: 57px;
     font-size: 28px;
 }
-.socials>i{
-    margin-left: 22px;
+.socials>a>i{
+    color: #82699D;
+    margin-left: 20px;
 }
