@@ -254,3 +254,32 @@ header{
     transform: translateY(20px);
     
 }
+
+
+/* footer */
+.footer{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: #E8E8E8;
+    height: 57px;
+}
+.copyright{
+    width: 300px;
+    float: left;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 57px;
+    color: #454242;
+}
+.socials{
+    width: 718px;
+    float: left;
+    text-align: right;
+    color: #82699D;
+    line-height: 57px;
+    font-size: 28px;
+}
+.socials>i{
+    margin-left: 22px;
+}
