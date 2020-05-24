@@ -46,7 +46,9 @@ header{
 /* logo */
 .logo{
     height: 130px;
-   
+}
+.logo>a{
+    display: block;
 }
 .logo_img{
     display: block;
